@@ -28,9 +28,9 @@ footerArea.innerHTML = `
             <div class="footer-empresa">
                 <h3>Empresa</h3>
                 <ul>
-                    <li><a href="#"><i class="bi bi-caret-right-fill"></i>Sobre</a></li>
-                    <li><a href="#"><i class="bi bi-caret-right-fill"></i>Contacto</a></li>
-                    <li><a href="#"><i class="bi bi-caret-right-fill"></i>Suporte</a></li>
+                    <li><a href="about.html"><i class="bi bi-caret-right-fill"></i>Sobre</a></li>
+                    <li><a href="contact.html"><i class="bi bi-caret-right-fill"></i>Contacto</a></li>
+                    <li><a href="contact.html"><i class="bi bi-caret-right-fill"></i>Suporte</a></li>
                 </ul>
             </div>
             <div class="footer-solition">
