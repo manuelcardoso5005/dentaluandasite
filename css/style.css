@@ -1,0 +1,1131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+
+    /* Colors */
+    --dark-blue: #030313;
+    --dark-blue2: #040430;
+    --grey: #6d6969;
+    --grey2: #ccc;
+    --green: #bdd741;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+#nav-menu {
+    background-color: var(--white);
+}
+
+nav {
+    position: relative;
+}
+
+nav #container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    transition: .3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4em;
+}
+
+#header-index {
+    background-image: url('../images/hospital/pexels-tima-miroshnichenko-5355720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header-index p {
+    color: var(--white);
+    font-weight: 700;
+    text-transform: capitalize;
+    user-select: none;
+    transition: .3s ease;
+}
+
+#header-index h1 {
+    color: var(--white);
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    margin-bottom: 1em;
+    user-select: none;
+    transition: .3s ease;
+}
+
+#header-index .header-area {
+    position: relative;
+    z-index: 2;
+}
+
+#header-index .bg-header { /* USAR GRADIENTE*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+    z-index: 1;
+}
+
+.btn {
+    background-color: var(--green);
+    color: var(--dark-blue);
+    font-weight: 700;
+    padding: 1em 2em;
+    transition: .3s ease;
+    user-select: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+    color: var(--green);
+}
+
+/* SECTION 1 - ABOUT */
+
+#about {
+    padding: 10em 0;
+    background-color: var(--white);
+}
+
+#about figure {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#about figure:hover img {
+    scale: 1.1;
+}
+
+#about figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s ease;
+}
+
+#about .title {
+    margin-bottom: .7em;
+}
+
+.title {
+    color: var(--dark-blue);
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    transition: .3s ease;
+}
+
+.text {
+    color: var(--grey);
+    line-height: 2em;
+    /*margin-bottom: .5em;*/
+    letter-spacing: .5px;
+    transition: .3s ease;
+}
+
+#about .about-information ul {
+    margin: 1.8em 0;
+    text-transform: capitalize;
+}
+
+#about .about-information ul li {
+    font-weight: 700;
+    transition: .3s ease;
+    margin-bottom: .3em;
+    font-size: 1.2em;
+    color: var(--dark-blue2);
+}
+
+#about .about-information .bi {
+    color: var(--green);
+}
+
+/* SECTION 2 - SINCE */
+
+#since {
+    background-color: #edf5fc;
+    padding: 10em 0;
+}
+
+#since img {
+    max-width: 500px;
+}
+
+#since .title {
+    margin-bottom: 1.5em;
+}
+
+#since  .since-information .text {
+    margin-bottom: 2.5em;
+}
+
+#since ul li {
+    border-bottom: 1px solid rgb(0, 0, 0, .1);
+    padding: 1em 0;
+}
+
+#since .title2 {
+    color: var(--dark-blue);
+    font-size: 2.7em;
+}
+
+/* SECTION 3 - SERVICES */
+
+#services {
+    padding: 10em 0;
+    background-color: var(--white);
+}
+
+#services .services-area-top {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.title3 {
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+/* SECTION 4 - CONTACT */
+
+#contact {
+    padding: 10em 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#main-index #contact {
+    background: url('../images/hospital/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main-about #contact {
+    background:transparent;
+}
+
+.body-about {
+    background: url('../images/hospital/pexels-anna-shvets-3845653.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#contact #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .bg-header { /* USAR GRADIENTE*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.459);
+    z-index: 1;
+}
+
+#contact .contact-content {
+    position: relative;
+    z-index: 2;
+    padding: 4em 0;
+}
+
+#contact .contact-content h1 {
+    color: var(--white);
+}
+
+#contact .contact-content h1 span {
+    color: var(--green);
+}
+
+#contact .contact-content p {
+    margin-bottom: 3em;
+    color: var(--grey2);
+}
+
+/* SECTION 5 - TEAM */
+
+#team {
+    padding: 10em 0;
+    background-color: var(--white);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#team .team-top {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+#team .team-card {
+    text-align: center;
+}
+
+#team figure {
+    width: 300px;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#team figure:hover img {
+    scale: 1.1;
+}
+
+#team figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+
+.team-information {
+    padding: 2em;
+}
+
+/* SECTION 6 - */
+
+#services .all-services .card {
+    text-align: center;
+}
+
+#services .all-services .card img {
+    width: 4em;
+    height: 4em;
+    transition: .3s ease;
+}
+
+#services .all-services .card img:hover {
+    transform: translateY(-10px);
+}
+
+/* SECTION 7 - AGENDAR */
+
+#agendar {
+    padding: 10em 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+}
+
+#agendar figure {
+    width: 100%;
+    transition: .3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#agendar figure img {
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    border-radius: 8px;
+    object-fit: cover;
+}
+    
+#agendar .form-control input,
+#agendar select {
+    background-color: #e7e7e7;
+    padding: 1.2em .5em;
+    border-radius: 4px;
+}
+
+#agendar button {
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* SECTION 8 - ESPECIALITY */
+
+#especiality {
+    padding: 10em 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+}
+
+#especiality .especiality-top {
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+.all-especiality {
+    width: 80%;
+    margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #edf5fc;
+}
+
+.footer-area {
+    padding: 10em 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-area .footer-sobre p:nth-child(2) {
+    margin: 2em 0 1em 0;
+}
+
+.footer-area .footer-sobre p:nth-child(4) {
+    margin: 1.5em 0;
+}
+
+.footer-area .footer-sobre p:nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-area .footer-sobre p:nth-child(5) .bi {
+    margin-left: .5em;
+    font-size: 1.5em;
+}
+
+.footer-area .bi {
+    color:#bdd741;
+}
+
+.footer-area .adress .bi {
+    margin-right: .5em;
+    font-size: 1.2em;
+}
+
+.dev-area {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.footer-empresa h3 {
+    font-size: 1.3em;
+    color: var(--dark-blue);
+}
+
+.footer-area h3 {
+    margin-bottom: .5em;
+}
+
+.footer-area ul li {
+    margin-top: 1.5em;
+}
+
+.footer-area ul li .bi {
+    margin-right: .3em;
+}
+
+.footer-area ul a {
+    color: var(--dark-blue);
+    transition: .3s ease;
+}
+
+.footer-area ul a:hover {
+    text-decoration: underline;
+}
+
+.footer-newsletter .text {
+    margin-bottom: 2em;
+}
+
+.footer-newsletter input {
+    padding: 1.2em;
+    width: 100%;
+    margin-bottom: 1.5em;
+    border-radius: 35px;
+}
+
+#consult-panel {
+    padding: 10em 0;
+    text-align: center;
+}
+
+#consult-panel #recover-email {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 360px;
+    margin: auto;
+    padding: 2.5em 0;
+    border-radius: 8px;
+    background-color: #edf5fc;
+}
+
+#consult-panel #recover-email input {
+    background-color: #dddbdb;
+    padding: 1em;
+    width: 80%;
+}
+
+.msg-erro {
+    width: 100%;
+    color: #eb5870;
+    font-weight: 700;
+    margin-bottom: .5em;
+    height: 20px;
+}
+
+.btn-entrar {
+    margin-top: 2em;
+}
+
+
+/* CONSULTAR */
+
+.consult-profile {
+    padding: 10em 0;
+}
+
+.profile-table table {
+    padding: 2em 0;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-table table th {
+    padding: 1em 0;
+    font-size: 1.2em;
+    background-color: var(--green);
+    user-select: none;
+}
+
+.profile-table table th,
+.profile-table table td  {
+    border: 1px solid var(--dark-blue);
+}
+
+.profile-table table td  {
+    padding: 1em 0;
+}
+
+.personal-info {
+    color: var(--dark-blue);
+    font-size: 1.2em;
+}
+
+.personal-info p span:nth-child(1) {
+    margin-right: .5em;
+    font-weight: 700;
+}
+/* MENU SERVICE */
+
+#header-diferent {
+    padding: 5em 0;
+    background-color: #edf5fc;
+    text-align: center;
+}
+
+#header-diferent h1 {
+    font-size: 2.5em;
+}
+
+#header-diferent p {
+    padding: .5em 0;
+}
+
+#header-diferent a {
+    font-weight: 700;
+    color: var(--dark-blue);
+    transition: .3s ease;
+}
+
+#header-diferent a:hover {
+    text-decoration: underline;
+}
+
+#header-diferent .active-option {
+    text-decoration: underline;
+}
+
+#adreess-all {
+    text-align: center;
+    padding: 0 0 10em 0;
+}
+
+#adreess-all .title3 {
+    font-size: 1.3em;
+}
+
+#adreess-all .bi {
+    font-size: 3.5em;
+}
+
+#adreess-google {
+    padding: 10em 0;
+}
+
+@media screen and (max-width:900px) {
+
+    /* HEADER */
+    #header-index {
+        height: 350px;
+    }
+
+    #header-index p {
+        font-size: .8em;
+    }
+
+    #header-index h1 {
+        font-size: 1.5em;
+        max-width: 350px;
+    }
+
+    /* SECTION 1 - ABOUT */
+
+    #about figure {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* SECTION 8 - ESPECIALITY */
+
+    #especiality {
+        text-align: center;
+    }
+
+    #especiality .card-especiality {
+        margin-top: 2em;
+    }
+
+}
+
+@media screen and (min-width:900px) {
+
+    /* HEADER */
+    #header-index {
+        height: 550px;
+    }
+    
+    #header-index p {
+        font-size: 1em;
+    }
+
+    #header-index h1 {
+        font-size: 2.5em;
+        max-width: 650px;
+    }
+
+    /* SECTION 1 - ABOUT */
+
+    #about figure {
+        width: 100%;
+        height: 450px;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    /* SECTION 5 - TEAM */
+
+    .team-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+    
+    /* SECTION 8 - ESPECIALITY */
+
+    #especiality .all-especiality {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .all-especiality .card-especiality {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .all-especiality .card-especiality img {
+        margin-right: 1.5em;
+    }
+
+    .all-especiality .card-especiality:nth-child(1),
+    .all-especiality .card-especiality:nth-child(3) {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width:1150px) {
+
+    /* NAVBAR */
+
+    nav {
+        border-bottom: 1px solid rgb(0, 0, 0, .1);
+        padding: 1em 0;
+    }
+
+    #container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    #btn-menu {
+        width: 35px;
+        height: 29px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    #btn-menu .bar {
+        width: 100%;
+        height: 5px;
+        background-color: var(--dark-blue);
+        margin-bottom: 7px;
+        transition: .5s ease;
+        position: absolute;
+    }
+    
+    #btn-menu .bar:nth-child(2) {
+        margin-top: 12px;
+    }
+
+    #btn-menu .bar:nth-child(3) {
+        margin-top: 24px;
+    }
+
+    #btn-menu.active-menu .bar:nth-child(1) {
+        rotate: -45deg;
+        margin-top: 12px;
+    }
+
+    #btn-menu.active-menu .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #btn-menu.active-menu .bar:nth-child(3) {
+        rotate: 45deg;
+        margin-top: 12px;
+    }
+
+    #menu {
+        position: absolute;
+        background-color: var(--dark-blue);
+        right: 0;
+        top: 106px;
+        height: calc(100vh - 106px);
+        width: 0%;
+        transition: .5s ease;
+        z-index: 10;
+    }
+
+    #menu li {
+        position: relative;
+        padding: 1.5em 0;
+    }
+
+    #menu li a {
+        color: var(--white);
+        width: 100%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding-top: .7em;
+        padding-left: 2em;
+        border-bottom: 1px solid rgb(255, 255, 255, .1);
+        border-top: 1px solid rgb(255, 255, 255, .1);
+        transition: .3s ease;
+        font-weight: 700;
+    }
+
+    #menu li a:hover {
+        background-color: var(--white);
+        color: var(--dark-blue);
+    }
+
+    #menu.open-menu {
+        width: 80%;
+    }
+    
+    #bg-cover.active-bg {
+        position: absolute;
+        z-index: 9;
+        top: 106px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: .7s ease;
+    }
+
+    .cell-phone {
+        display: none;
+    }
+
+    /* SECTION 1 - ABOUT */
+
+    #about .about-information {
+        padding: 2em 1em;
+        text-align: center;
+    }   
+
+    #about .about-information ul li {
+        display: grid;
+        margin-bottom: 1.5em;
+    }
+
+    
+    /* SECTION 2 - SINCE */
+
+    #since #container {
+        text-align: center;
+    }
+
+    #since img {
+        margin: 6em 0;
+    }
+
+    #since #container ul {
+        text-align: left;
+    }
+
+    /* SECTION 4 - CONTACT */
+
+    #contact .contact-content h1 {
+        font-size: 2em;
+    }
+
+    
+    /* SECTION 5 - TEAM */
+
+    #team figure {
+        margin: auto;
+    }
+
+    /* SECTION 6 - ABOUT */
+
+    #agendar figure {
+        height: 350px;
+    }
+
+    .agendar-form {
+        padding: 3em 0;
+    }
+
+    .agendar-top {
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .form-control {
+        display: grid;
+    }
+
+    #agendar .form-control input,
+    #agendar select {
+       width: 100%;
+       margin-top: 1.5em;
+    }   
+
+    /* FOOTER */
+
+    .footer-area h3 {
+        margin-top: 2em;
+    }
+
+    .footer-newsletter {
+        text-align: center;
+    }
+
+    #adreess-all .card {
+        margin-bottom: 2.5em;
+    }
+
+    #adreess-all .card:nth-child(3) {
+        margin-bottom: 0em;
+    }
+    
+}
+
+@media screen and (min-width:1150px) {
+
+    /* NAVBAR */
+
+    nav {
+        padding: 1.5em 0;
+    }
+
+    #container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    nav #container ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    nav #container ul li {
+        margin-right: 2em;
+    }
+
+    nav #container ul li:nth-child(6) {
+        margin-right: 0em;
+    }
+
+    nav #container ul li a {
+        color: var(--dark-blue);
+        font-size: 1.1em;
+        font-weight: 400;
+        transition: .3s ease;
+        position: relative;
+    }
+
+    nav #container ul li a:hover {
+        color: var(--green);
+    }
+
+    nav #container ul li a div {
+        background-color: var(--green);
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        margin-top: 6px;
+        transition: .3s ease;
+    }
+
+    nav #container ul li a:hover div {
+        width: 100%;
+    }
+
+    nav .cell-phone {
+        background-color: var(--green);
+        color: var(--dark-blue);
+        padding: 1em 2em;
+        border-radius: 30px;
+        font-weight: 700;
+        transition: .1s;
+    }
+
+    nav .cell-phone:hover {
+        background-color: var(--dark-blue);
+        color: var(--green);
+    }
+
+    nav .cell-phone .bi {
+        margin-right: .5em;
+    }
+
+    /* HEADER */
+
+    #header-index {
+        height: 650px;
+    }
+
+    #header-index p {
+        font-size: 1.2em;
+    }
+
+    #header-index h1 {
+        font-size: 3.5em;
+        max-width: 650px;
+    }
+
+    /* SECTION 1 - ABOUT */
+
+    #about #container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #about figure {
+        width: 50%;
+        height: 500px;
+    }
+
+    #about .about-information {
+        width: 50%;
+        padding-left: 5em;
+    }
+
+    .title {
+        font-size: 2.7em;
+    }
+
+    #about .about-information .bi {
+        margin-right: 1em;
+    }
+
+    /* SECTION 2 - SINCE */
+
+    #since #container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    #since #container .since-information {
+        width: 37%;
+    }
+
+    #since #container figure {
+        width: 43%;
+    }
+
+    #since #container ul {
+        width: 20%;
+    }
+
+    /* SECTION 3 - SERVICES */
+
+    #services .all-services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2em;
+    }
+
+    /* SECTION 4 - CONTACT */
+    
+    .index-contact .contact-content {
+        width: 600px;
+    }
+
+    .about-contact .contact-content {
+        width: 800px;
+    }
+
+    #contact .contact-content h1 {
+        font-size: 4em;
+    }
+
+    /* SECTION 5 - TEAM */
+
+    .team-cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    /* SECTION 6 - ABOUT */
+
+    #agendar #container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    #agendar figure {
+        width: 50%;
+        height: 450px;
+    }
+
+    #agendar #container .agendar-form {
+        width: 50%;
+        padding-left: 4em;
+    }
+
+    #agendar .agendar-form .form-control {
+        margin-top: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1.5em
+    }
+
+    .agendar-form .agendar-top {
+        margin-bottom: 2em;
+    }
+    
+    /* SECTION 8 - ESPECIALITY */
+
+    #especiality .all-especiality {
+        width: 99%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2em;
+    }
+
+    .all-especiality .card-especiality:nth-child(2) {
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /* FOOTER */
+
+    .footer-area {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer-area .footer-sobre {
+        width: 40%;
+    }
+
+    .footer-area .footer-empresa,
+    .footer-area .footer-solition,
+    .footer-area .footer-newsletter {
+        padding-top: 2.3em;
+        width: 20%;
+    }
+
+    .footer-sobre .text {
+        max-width: 450px;
+    }
+
+    .footer-area h3 {
+        margin-bottom: 2em;
+    }
+
+    #adreess-all #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
